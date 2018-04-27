@@ -1,6 +1,6 @@
 <?php
 
-function sendEmail($c) {
+function sendMail($c) {
     $content_type = isset($c['content_type']) ? $c['content_type'] : 'text/plain';
     if(isset($c['files']) && is_array($c['files']) && count($c['files']) > 0){
         $uid = md5(uniqid(time()));
